@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-nav-white: rgba(255, 255, 255, 1);
+  --color-text-nav: rgba(130, 194, 32, 1);
+  --color-button: rgba(130, 194, 32, 1);
+  --color-hero-start: rgba(216, 236, 186, 1);
+  --color-hero-end: rgba(16, 236, 186, 0);
+  --color-module-blue: rgba(152, 205, 255, 0.1);
+  --color-module-red: rgba(255, 107, 107, 0.1);
+  --color-module-yellow: rgba(255, 195, 0, 0.1);
+  --color-module-finance: rgba(42, 183, 202, 0.1);
+  --color-module-classroom: rgba(0, 209, 178, 0.1);
+  --color-module-videos: rgba(162, 89, 255, 0.1);
+  --color-ssn-bg: rgba(234, 230, 232, 1);
+  --color-ssn-card: rgba(243, 249, 233, 1);
+  --color-text-black: rgba(1, 6 16, 16, 1);
+   --breakpoint-tablet:930px;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  background-color: white;
+  color: rgb(var(--color-text-black));
+}
+
