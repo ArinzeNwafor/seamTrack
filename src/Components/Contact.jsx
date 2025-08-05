@@ -33,11 +33,15 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-8 lg:px-16">
         <div
           className="relative bg-cover bg-center rounded-2xl py-20 px-4 text-center overflow-hidden"
-          style={{ backgroundImage: `url(${bgImage})` }}
+                      style={{ 
+              backgroundImage: `url(${bgImage})`,
+              backgroundSize: '100%',
+              backgroundPosition: 'center -100px'
+            }}
         >
           <div className="absolute inset-0 bg-button opacity-90 rounded-2xl"></div>
           {/* Decorative S patterns */}
-          <img src={s2Logo} alt="pattern" className="absolute -bottom-1 -left-0 w-66 h-auto opacity-85 pointer-events-none" />
+          <img src={s2Logo} alt="pattern" className="absolute -bottom-0 -left-0 w-66 h-auto opacity-85 pointer-events-none" />
           <img src={s2Logo} alt="pattern" className="absolute -top-0 -right-0 w-60 h-auto opacity-85 pointer-events-none transform rotate-180" />
 
           <div className="relative z-10">
@@ -102,7 +106,7 @@ const Contact = () => {
                 </div>
                 <button
                   type="submit"
-                  className="bg-button hover:opacity-90 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-200"
+                  className="bg-button hover:opacity-90 text-white font-semibold py-3 px-8 rounded-[4px] transition-colors duration-200 cursor-pointer"
                 >
                   Submit
                 </button>
