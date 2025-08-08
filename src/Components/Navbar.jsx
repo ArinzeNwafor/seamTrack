@@ -33,14 +33,16 @@ function Navbar() {
 
   return (
     <nav className="bg-white shadow-sm fixed w-full z-50">
-      <div className="container mx-auto px-4 lg:px-3 py-3 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 md:px-8 lg:px-16 py-3 flex justify-between items-center">
         <div className="flex items-center">
-          <img src={logo} alt="SeamTrack Logo" className="h-8 w-auto shrink-0" />
+          <img src={logo} alt="SeamTrack Logo" className="h-10 w-auto shrink-0" />
         </div>
         <div className="hidden tablet:flex items-center space-x-5 lg:space-x-4 xl:space-x-8">
           {renderLinks()}
-          <Button>Sign up</Button>
-          <Button variant="outline">Sign in</Button>
+          <div className="flex items-center space-x-2">
+            <Button>Sign up</Button>
+            <Button variant="outline">Sign in</Button>
+          </div>
         </div>
 
         <div className="tablet:hidden">
