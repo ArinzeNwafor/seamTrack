@@ -8,6 +8,7 @@ import locationIcon from "../assets/location.png";
 import sLogo from "../assets/S.png";
 import bgImage from "../assets/bg.jpg";
 import s2Logo from "../assets/S2.png";
+import contactp from "../assets/contactp.png";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -32,24 +33,25 @@ const Contact = () => {
       {/* Header Section */}
       <div className="max-w-7xl mx-auto px-3 sm:px-6 md:px-8 lg:px-16">
         <div
-          className="relative bg-center bg-[length:110%] sm:bg-cover rounded-2xl py-8 sm:py-12 md:py-16 lg:py-20 px-4 text-center overflow-hidden min-h-[140px] max-h-[140px] sm:min-h-[180px] sm:max-h-[180px] flex items-center justify-center"
-                      style={{ 
-              backgroundImage: `url(${bgImage})`,
-              backgroundPosition: 'center',
-              backgroundAttachment: 'fixed'
-            }}
+          className="relative bg-center bg-[length:160%] sm:bg-cover rounded-md py-8 sm:py-12 md:py-16 lg:py-20 px-4 text-center overflow-hidden min-h-[140px] max-h-[140px] sm:min-h-[180px] sm:max-h-[180px] flex items-center justify-center"
+          style={{ 
+            backgroundImage: `url(${bgImage})`,
+            backgroundPosition: 'center',
+            backgroundAttachment: 'fixed',
+            borderRadius: '5px'
+          }}
         >
-          <div className="absolute inset-0 bg-button opacity-90 rounded-2xl"></div>
+          <div className="absolute inset-0 bg-button opacity-90 rounded-[5px]"></div>
           {/* Decorative S patterns */}
           <img 
             src={s2Logo} 
             alt="pattern" 
-            className="absolute -bottom-0 -left-0 w-24 sm:w-44 md:w-56 lg:w-50 h-auto opacity-85 pointer-events-none" 
+            className="absolute -bottom-0.5 -left-0 w-24 sm:w-44 md:w-56 lg:w-50 h-auto opacity-85 pointer-events-none" 
           />
           <img 
             src={s2Logo} 
             alt="pattern" 
-            className="absolute -top-0 -right-0 w-24 sm:w-40 md:w-52 lg:w-50 h-auto opacity-85 pointer-events-none transform rotate-180" 
+            className="absolute -top-0.5 -right-0 w-24 sm:w-40 md:w-52 lg:w-50 h-auto opacity-85 pointer-events-none transform rotate-180" 
           />
 
           <div className="relative z-10 px-2">
@@ -77,7 +79,7 @@ const Contact = () => {
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="bg-[#F4F4F4] p-6 sm:p-8 rounded-none sm:rounded-2xl space-y-6 mx-[-1.5rem] sm:mx-0">
+                <div className="sm:bg-[#F4F4F4] p-6 sm:p-8 rounded-none sm:rounded-2xl space-y-6 mx-[-1.5rem] sm:mx-0">
                   <input
                     className="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-button focus:border-transparent"
                     type="text"
@@ -130,14 +132,14 @@ const Contact = () => {
           <div className="order-1 lg:order-2 bg-[#F3F9E9] p-5 rounded-none sm:rounded-2xl mx-[-1.5rem] sm:mx-0 lg:col-span-5">
             <div className="relative mb-8">
               <img
-                src="/src/assets/contactp.png"
+                src={contactp}
                 alt="Contact us"
                 className="w-full h-80 object-cover rounded-xl"
               />
               {/* Decorative element */}
               <div className="absolute top-0 right-0 w-50 h-50 pointer-events-none">
                 <div
-                  className="absolute bottom-5 left-5 w-full h-full bg-button"
+                  className="absolute bottom-5 left-4 w-full h-full bg-button"
                   style={{
                     maskImage: `url(${sLogo})`,
                     maskSize: 'contain',
