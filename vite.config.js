@@ -5,4 +5,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
   base: mode === 'production' ? '/seamTrack/' : '/',
+  server: {
+    host: true,
+    hmr: { overlay: false },
+  },
 }))
