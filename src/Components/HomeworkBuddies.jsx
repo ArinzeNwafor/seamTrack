@@ -17,7 +17,7 @@ const HomeworkBuddies = () => {
     <div className="bg-white min-h-screen">
 
       {/* Hero Section */}
-      <section className="relative z-0 max-w-6xl mx-auto px-4 pt-24 pb-16 grid md:grid-cols-2 gap-8 items-center">
+      <section className="relative z-0 max-w-6xl mx-auto px-4 pt-24 pb-14 grid md:grid-cols-2 gap-6 md:gap-8 items-center">
         {/*grid background covering entire hero */}
         <div
           aria-hidden
@@ -37,14 +37,14 @@ const HomeworkBuddies = () => {
           <div className="relative z-10">
             <h2 className="text-3xl md:text-5xl font-extrabold mb-4 text-[#231F20] leading-tight">Get Help. Give Help. Learn Better.</h2>
             <p className="mb-8 text-gray-700 text-lg max-w-md">Homework Buddies connects students to real-time support for any task. Unlock collaborative learning & academic confidence.</p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-[var(--color-text-nav)] text-white px-6 py-3.5 rounded-[5px] font-medium shadow cursor-pointer hover:opacity-90 transition">I’d like to get help / talk</button>
-              <button className="border border-[var(--color-text-nav)] text-[var(--color-text-nav)] px-6 py-3.5 rounded-[5px] font-medium bg-white cursor-pointer hover:bg-[var(--color-text-nav)] hover:text-white hover:border-[var(--color-text-nav)] transition-all duration-300">I’d like to assist with studying</button>
+            <div className="flex flex-col md:flex-row gap-3 md:gap-4 w-full md:w-auto">
+              <button className="w-full md:w-auto bg-[var(--color-text-nav)] text-white px-6 py-3.5 rounded-[5px] font-medium shadow cursor-pointer hover:opacity-90 transition">I’d like to get help / talk</button>
+              <button className="w-full md:w-auto border border-[var(--color-text-nav)] text-[var(--color-text-nav)] px-6 py-3.5 rounded-[5px] font-medium bg-white cursor-pointer hover:bg-[var(--color-text-nav)] hover:text-white hover:border-[var(--color-text-nav)] transition-all duration-300">I’d like to assist with studying</button>
             </div>
           </div>
         </div>
         <div className="relative flex justify-center items-center">
-          <img src={hmbuddiesImg} alt="Homework Buddies" className="rounded-2xl w-full max-w-lg h-125 object-cover" />
+          <img src={hmbuddiesImg} alt="Homework Buddies" className="rounded-[10px] w-full max-w-lg h-90 md:h-125 object-cover" />
         </div>
       </section>
 
@@ -61,7 +61,7 @@ const HomeworkBuddies = () => {
           <img
             src={howImg}
             alt="How it works"
-            className="rounded-xl w-full h-[420px] md:h-[500px] object-cover shadow-lg md:-mr-4"
+            className="rounded-xl w-full h-[410px] sm:h-[400px] md:h-[500px] object-cover shadow-lg md:-mr-4"
           />
           {/* Right: Stacked pastel cards */}
           <div className="space-y-4 md:max-w-sm">
@@ -91,7 +91,7 @@ const HomeworkBuddies = () => {
       {/* Why Homework Buddies */}
       <section className="max-w-6xl mx-auto px-4 py-8">
         <h3 className="text-2xl md:text-3xl font-semibold mb-7">Why Homework Buddies?</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {/* Card 1 */}
           <div className="bg-white border border-gray-300 rounded-xl p-6 shadow-sm min-h-[150px]">
             <img src={iconPay} alt="Secure Payments" className="h-10 w-10 mb-3" />
@@ -133,16 +133,16 @@ const HomeworkBuddies = () => {
                 <li className="flex items-start gap-2"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-text-nav" />Private, supportive help tailored to your goals.</li>
                 <li className="flex items-start gap-2"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-text-nav" />Stay on track with simple progress check‑ins.</li>
               </ul>
-              <button className="inline-flex items-center justify-center rounded-[5px] bg-[var(--color-text-nav)] text-white cursor-pointer px-4 py-2 font-medium border w-44 md:w-52 text-center hover:opacity-90 transition-all duration-300">Join as Student/Parent</button>
+              <button className="inline-flex items-center justify-center rounded-[5px] bg-[var(--color-text-nav)] text-white cursor-pointer px-4 py-2 font-medium border w-full md:w-52 text-center hover:opacity-90 transition-all duration-300">Join as Student/Parent</button>
             </div>
             {/* Image: Students & Parents */}
-            <img src={imgParents} alt="Students and parents" className="w-full h-[280px] md:h-[360px] object-cover rounded-xl shadow-sm" />
+            <img src={imgParents} alt="Students and parents" className="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover rounded-xl shadow-sm" />
           </div>
 
           {/* Row 2 */}
           <div className="grid md:grid-cols-2 gap-4">
             {/* Image: Tutors */}
-            <img src={imgTutors} alt="Teachers and tutors" className="w-full h-[280px] md:h-[360px] object-cover rounded-xl shadow-sm" />
+            <img src={imgTutors} alt="Teachers and tutors" className="w-full h-[320px] sm:h-[360px] md:h-[400px] object-cover rounded-xl shadow-sm" />
             {/* Card: Teachers & Tutors */}
             <div className="rounded-xl bg-ssn-card p-6 md:p-7">
               <h4 className="text-lg md:text-xl font-semibold text-gray-900 mb-3">For Teachers & Trainers</h4>
@@ -152,7 +152,7 @@ const HomeworkBuddies = () => {
                 <li className="flex items-start gap-2"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-text-nav" />Fair, transparent working model with steady demand.</li>
                 <li className="flex items-start gap-2"><span className="mt-1 inline-block h-2 w-2 rounded-full bg-text-nav" />Payments handled smoothly and on time.</li>
               </ul>
-              <button className="inline-flex items-center justify-center rounded-[5px] bg-transparent text-[var(--color-text-nav)] px-4 py-2 font-medium border border-[var(--color-text-nav)] cursor-pointer w-44 md:w-52 text-center hover:bg-[var(--color-text-nav)] hover:text-white hover:border-[var(--color-text-nav)] transition-all duration-300">Join as Teacher/Tutor</button>
+              <button className="inline-flex items-center justify-center rounded-[5px] bg-transparent text-[var(--color-text-nav)] px-4 py-2 font-medium border border-[var(--color-text-nav)] cursor-pointer w-full md:w-52 text-center hover:bg-[var(--color-text-nav)] hover:text-white hover:border-[var(--color-text-nav)] transition-all duration-300">Join as Teacher/Tutor</button>
             </div>
           </div>
         </div>
@@ -163,17 +163,17 @@ const HomeworkBuddies = () => {
         <div className="relative grid md:grid-cols-2 gap-4 items-center rounded-xl bg-ssn-card p-6 md:p-8 shadow-sm">
           {/* Left area */}
           <div>
-            <h3 className="text-2xl md:text-[45px] font-semibold text-[var(--color-text-nav)] mb-2">Ready to Get Started?</h3>
-            <p className="text-gray-700 mb-4 max-w-md">Sign up now and experience the benefits of Homework Buddies for yourself.</p>
-            <div className="flex gap-3">
-              <button className="inline-flex items-center justify-center rounded-[5px] bg-[var(--color-text-nav)] text-white cursor-pointer px-4 py-2 font-medium border w-44 md:w-52 text-center hover:opacity-90 transition-all duration-300">Get Started Free</button>
-              <button className="inline-flex items-center justify-center rounded-[5px] bg-transparent text-[var(--color-text-nav)] px-4 py-2 font-medium border border-[var(--color-text-nav)] cursor-pointer w-44 md:w-52 text-center hover:bg-[var(--color-text-nav)] hover:text-white hover:border-[var(--color-text-nav)] transition-all duration-300">How it Works</button>
+            <h3 className="text-3xl md:text-[45px] font-semibold text-[var(--color-text-nav)] mb-3 md:mb-2">Ready to Get Started?</h3>
+            <p className="text-base md:text-gray-700 mb-6 md:mb-4 max-w-md">Sign up now and experience the benefits of Homework Buddies for yourself.</p>
+            <div className="flex flex-col md:flex-row gap-4">
+              <button className="inline-flex items-center justify-center rounded-[5px] bg-[var(--color-text-nav)] text-white cursor-pointer px-6 py-3 md:px-4 md:py-2 text-base md:text-sm font-medium border w-full md:w-52 text-center hover:opacity-90 transition-all duration-300">Get Started Free</button>
+              <button className="inline-flex items-center justify-center rounded-[5px] bg-transparent text-[var(--color-text-nav)] px-6 py-3 md:px-4 md:py-2 text-base md:text-sm font-medium border border-[var(--color-text-nav)] cursor-pointer w-full md:w-52 text-center hover:bg-[var(--color-text-nav)] hover:text-white hover:border-[var(--color-text-nav)] transition-all duration-300">How it Works</button>
             </div>
           </div>
 
           {/* Right image */}
           <div className="relative">
-            <img src={ctaImg} alt="Student using laptop" className="w-full h-[240px] md:h-[310px] object-cover rounded-xl shadow-sm" />
+            <img src={ctaImg} alt="Student using laptop" className="w-full h-[280px] sm:h-[320px] md:h-[360px] object-cover rounded-xl shadow-sm" />
           </div>
         </div>
       </section>

@@ -7,6 +7,5 @@ export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/seamTrack/' : '/',
   server: {
     host: true,
-    hmr: { overlay: false },
   },
 }))
