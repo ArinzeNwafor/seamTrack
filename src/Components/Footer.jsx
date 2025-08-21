@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Logo and Social Media (Desktop) */}
           <div className="hidden lg:block lg:w-1/4">
             <div className="flex items-center mb-4">
-              <img src={logo} alt="SeamTrack Logo" className="h-12" />
+              <img src={logo} alt="SeamTrack Logo" className="h-14" />
             </div>
             <div className="flex space-x-5">
               <FaFacebook className='text-button text-lg hover:opacity-70 cursor-pointer transition-opacity duration-200'/>
@@ -80,7 +80,7 @@ const Footer = () => {
         {/* Logo and Social Media (Mobile) */}
         <div className="col-span-2 lg:hidden mt-10 border-t border-gray-300 pt-8 text-center">
           <div className="flex justify-center mb-4">
-            <img src={logo} alt="SeamTrack Logo" className="h-12" />
+            <img src={logo} alt="SeamTrack Logo" className="h-14" />
           </div>
           <div className="flex justify-center space-x-5">
             <FaFacebook className='text-button text-lg hover:opacity-70 cursor-pointer transition-opacity duration-200'/>

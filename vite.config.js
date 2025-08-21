@@ -6,6 +6,13 @@ export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
   base: mode === 'production' ? '/seamTrack/' : '/',
   server: {
-    host: true,
+    host: '0.0.0.0',
+    port: 3000,
+    strictPort: true,
+    hmr: {
+      host: 'localhost',
+      port: 3000
+    },
+    allowedHosts: ['seamtrack.loca.lt', 'localhost'],
   },
 }))
